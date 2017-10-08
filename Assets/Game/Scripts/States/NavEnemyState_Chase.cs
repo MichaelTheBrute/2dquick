@@ -32,9 +32,18 @@ public class NavEnemyState_Chase : StateMachineBehaviour {
 	//}
 
 	// OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here
-	//override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-	//
-	//}
+	override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+		//Vector3 nextPosition = GetNextPathPositionAtSpeed ();
+		//nextPosition = RoundPositionToNearestInteger ();
+		/*if (ec.GetComponent<NavMeshAgent> ().hasPath) {
+			var path = ec.GetComponent<NavMeshAgent> ().path;
+			for (int i = 0; i < path.corners.Length - 1; i++)
+			{
+				//Graphics.
+				Debug.DrawLine(path.corners[i] + new Vector3(0,1,0), path.corners[i + 1] + new Vector3(0,1,0), Color.red);
+			}
+		}*/
+	}
 
 	// OnStateIK is called right after Animator.OnAnimatorIK(). Code that sets up animation IK (inverse kinematics) should be implemented here.
 	//override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
